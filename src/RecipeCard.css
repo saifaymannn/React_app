@@ -1,0 +1,100 @@
+.recipe-card {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fafafa; /* Light grey background for a subtle look */
+  border: 1px solid #e0e0e0; /* Slight border for definition */
+  border-radius: 12px; /* Softened corners */
+  overflow: hidden;
+  margin: 20px;
+  width: 280px; /* Slightly narrower for a more elegant look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Soft shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.recipe-image-container {
+  height: 160px; /* Reduced height for less dominance */
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-image-container:hover .recipe-image {
+  transform: scale(1.03); /* Gentle zoom on hover */
+}
+
+.recipe-content {
+  padding: 15px;
+}
+
+.recipe-title {
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+  font-size: 18px; /* Slightly larger for emphasis */
+  margin-bottom: 5px;
+}
+
+.recipe-details {
+  color: #757575; /* Muted color for details */
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.toggle-button {
+  background: transparent;
+  color: #ff8a65; /* Subtle color for the button */
+  border: 1px solid #ff8a65; /* Border to match text color */
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: all 0.2s;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background: #ff8a65;
+  color: white;
+}
+
+.ingredient-list, .nutrition-info {
+  list-style: none;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.expanded {
+  max-height: 500px; /* Adjust based on content */
+}
+
+.nutrition-info {
+  margin-top: 10px;
+}
+
+.nutrition-info h4 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 14px;
+  color: #666;
+  padding: 5px 0;
+}
